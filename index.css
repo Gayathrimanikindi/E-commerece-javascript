@@ -1,0 +1,15 @@
+.image{
+    background-image: url("./main.png.jpg");
+     width: 95%; 
+    height: 490px;
+    margin-left: 26px;
+}
+.text{
+    padding: 223px;
+    color: white;
+    margin-left: -195px;
+
+}
+.text h5{
+font-size: xx-large;
+}
