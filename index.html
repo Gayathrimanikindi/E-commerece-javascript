@@ -38,11 +38,11 @@
             <div>
                 <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-right-to-bracket"></i> Login</button></a> 
                 <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-user-plus"></i> Register</button></a>
-                 <a href="cart.html"> <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-cart-shopping"></i>Cart(0)</button></a>
-             </div>
+                <a href="cart.html" class="text-decoration-none text-dark"><button type="button" class="btn btn-outline-dark ms-2"><i class="fa-solid fa-cart-shopping"></i> Cart <span id="count">0</span>  </button></a>
+               </div>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
 
       <div class="image">
@@ -57,7 +57,7 @@
 
   
   <div class="container">
-    <div class="row m-5">
+    <div class="row m-5" id="cartButton">
       <div class="col-sm-none col-lg-1 col-md-none"></div>
       <div class="col-sm-12 col-lg-1 mb-2 col-md-6">
         <button type="button" onclick="add('all')" class="btn btn-outline-dark me-2">All</button>

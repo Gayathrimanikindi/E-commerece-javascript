@@ -28,10 +28,10 @@ console.log(product);
   sum=parseInt(localStorage.getItem('sum'));
  }
  if(localStorage.getItem('count')){
-  sum=parseInt(localStorage.getItem('count'));
+  count=parseInt(localStorage.getItem('count'));
  }
  if(localStorage.getItem('cart')){
-  sum=parseInt(localStorage.getItem('cart'));
+  cart=JSON.parse(localStorage.getItem('cart'));
  }
 
  updatecart();
@@ -42,7 +42,7 @@ function handler(card){
 ulElem.innerHTML=''
 card.forEach((items)=>{
   truncTitle(items.title)
-  console.log(items.title);
+  // console.log(items.title);
   
   trunc(items.description)
   ulElem.innerHTML+=`<div class="col"><div class="card mb-5 " style="width: 18rem;">
@@ -140,7 +140,7 @@ function truncTitle(title){
           function updatecart(){
             document.getElementById("count").textContent = count;
     localStorage.setItem("count", count);
-    document.getElementById("sum").textContent = sum;
+    // document.getElementById("sum").textContent = sum;
     localStorage.setItem("sum",Math.round(sum));
           }
 
